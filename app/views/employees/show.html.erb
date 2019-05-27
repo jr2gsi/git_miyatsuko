@@ -1,0 +1,53 @@
+<h2 data-component='base/h2' class='contenteditable'>employees</h2>
+
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>id</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.id'><%= @employee.id %></p>
+  </div>
+</div>
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>emp_id</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.emp_id'><%= @employee.emp_id %></p>
+  </div>
+</div>
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>name</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.name'><%= @employee.name %></p>
+  </div>
+</div>
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>age</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.age'><%= @employee.age %></p>
+  </div>
+</div>
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>address</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.address'><%= @employee.address %></p>
+  </div>
+</div>
+<div class='row clearfix' data-component='grid/col2'>
+  <div class='col-md-3 column x-content'>
+    <p data-component='base/paragraph' class='contenteditable'>busho</p>
+  </div>
+  <div class='col-md-9 column x-content'>
+    <p class='data-bind' data-component='data/text' data-name='@employee.busho'><%= @employee.busho %></p>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_employee_path(@employee), class: "btn btn-sm btn-default contenteditable" , data: { component: "data/link" } %>
+<%= link_to 'Back', employees_path, class: "btn btn-sm btn-default contenteditable" , data: { component: "base/anchor" } %>
